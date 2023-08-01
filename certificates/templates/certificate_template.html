@@ -1,0 +1,17 @@
+<!-- certificates/templates/certificate_template.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Certificate</title>
+</head>
+<body>
+    <!-- Load the external certificate template image -->
+    <img src="{{ template_path }}" alt="Certificate Template">
+
+    <!-- Add placeholders for dynamic data -->
+    <h1>{{ certificate.name }}</h1>
+    <p>Course: {{ certificate.subtitle }}</p>
+    <p>Date: {{ certificate.date }}</p>
+    <!-- Add other placeholders as needed -->
+</body>
+</html>

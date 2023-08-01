@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block  body %}
+<div class="container-fluid mt-4">
+    <div class="row">
+        <div  class="offset-4 col-md-4">
+            <form method="post" style="box-shadow: 2px 4px 10px rgb(10, 10, 10); padding: 20px; border-radius: 5%;">
+                {% csrf_token %}
+                <label for="title">Name:</label>
+                <input type="text" name="name" class="form-control" placeholder="John deow"><br>
+            
+                <label for="recipient_name">subtitle:</label>
+                <input type="text" name="subtitle" class="form-control" placeholder="JAVA full stack"><br>
+            
+                <label for="issue_date">Issue Date:</label>
+                <input type="date" name="date" class="form-control"><br>
+            
+                <label for="issue_date">Signature:</label>
+                <input type="text" name="sign" class="form-control" placeholder="John"><br>
+
+                <center><input type="submit" class="btn btn-success btn-lg" value="Create Certificate"></center>
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}
+    
+     
+
