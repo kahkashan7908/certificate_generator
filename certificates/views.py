@@ -6,7 +6,6 @@ from PIL import Image, ImageDraw, ImageFont
 from django.conf import settings
 from reportlab.lib.pagesizes import letter
 from io import BytesIO
-from django.contrib.auth.decorators import login_required
 from .forms import RegistrationForm
 from django.contrib import messages
 import os
